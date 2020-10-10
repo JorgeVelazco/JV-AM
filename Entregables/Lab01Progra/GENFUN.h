@@ -39,5 +39,5 @@ uint8 GENFUN_u8GetAverage( uint8 *pu8Src, uint8 u8SizeOfList );
 #define ASCII_TRANSFORMADOR_A_CARACTER	169
 #define Limite_SUPERIOR					200				
 #define RANDOMIZADOR_DE_VALORES			256			
-		
+#define	NUMEROS_PROMEDIADOS				5
 ///////////////////////////////////////////////////////////////////////////////////////

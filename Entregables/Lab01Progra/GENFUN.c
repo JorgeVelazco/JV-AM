@@ -6,6 +6,7 @@ void main ( void )
 	uint8 au8prueba1[14] = "Buenas Noches!";
 	uint8 au8Bprueba2[14] = "Optimus Prime!";  
 	uint8 au8ArrNumerico [8] = {18,5,7,2,6,31,24,11};
+	uint8 au8ArrPromedio [5] = {18,6,31,24,11};
 	uint8 au8RndmCaracter [255];
 	uint8 n = 0;
 	uint8 u8AOcurrenciaArr = 0;
@@ -36,18 +37,19 @@ void main ( void )
 			u8AOcurrenciaArr = GENFUN_u8GetOccurrence ( &au8Bprueba2[0], ASCII_COD_OBJETIVO, 14 );
 
 	printf("Las ocurrencias en el Arreglo %i\n", u8AOcurrenciaArr);
-	
-/*
-	//func get average
-	printf("\nGet Average\n");
-	printf("Array of numbers: ");
-	for (n = 0; n < 6; n++ )
-	{
-		printf("%d ", au8NumberArray[n]);
-	}
-	u8ArrayAverage = GENFUN_u8GetAverage ( &au8NumberArray[0], 6 );
-	printf("\nAverage: %d", u8ArrayAverage);
-*/
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    printf("\nPrueba Promedio\n");
+    printf("Promedio del Arreglo ");
+    for ( n = 0; n < NUMEROS_PROMEDIADOS; n++ )
+    {
+        printf("%d ", au8ArrPromedio[n]);
+    }
+    uint8 u8Promedio = GENFUN_u8GetAverage(&au8ArrPromedio[0], 5);
+    printf("\nAverage of Array Obtained: %d\n", u8Promedio);
+
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	printf("\nConjunto de memoria\n");
@@ -183,17 +185,19 @@ uint8 GENFUN_u8GetOccurrence (uint8 *pu8Src, uint8 u8Target, uint8 u8SizeOfList)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-uint8 GENFUN_u8GetAverage(uint8 *pu8Src, uint8 u8SizeOfList){
-	uint8 u8PromedioArr = 0;
-		while (u8SizeOfList != 0){
+uint8 GENFUN_u8GetAverage ( uint8 *pu8Src, uint8 u8SizeOfList )
+{
+    uint8 u8Suma = 0;
+    uint8 u8ResultadoPromedio = 0;
+    
+    for ( int i = 0; i < u8SizeOfList; i++ )
+    {
+        u8Suma += pu8Src[i];
+    }
 
-		u8PromedioArr += *pu8Src;
-		pu8Src++;
-		u8SizeOfList--;
-	}
+    u8ResultadoPromedio = u8Suma / u8SizeOfList;
 
-	u8PromedioArr = u8PromedioArr / u8SizeOfList;
-	return u8PromedioArr;
+    return u8ResultadoPromedio;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

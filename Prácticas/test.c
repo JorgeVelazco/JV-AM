@@ -3,5 +3,6 @@
 void main ( void ) 
 
 { 
-    printf("I am AM"); 
+    printf("I am PM");
+    printf("I am AML"); 
 }

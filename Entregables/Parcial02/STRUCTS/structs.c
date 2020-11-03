@@ -94,7 +94,7 @@ void main ( void )
 	}
 }
 
-after that printing the number of available so you can confirm it*/
+
 void ShowAvailableSlots ( tenParkingSectors enCurrentSector )
 {
 	uint8 u8Disponibilidad = 0;
@@ -129,7 +129,7 @@ void ShowAvailableSlots ( tenParkingSectors enCurrentSector )
 	}
 }
 
-avialable after that printing the number of not available so you can confirm it*/
+
 void ShowNotAvailableSlots ( tenParkingSectors enCurrentSector )
 {
 	uint8 u8NoDisponibilidad = 0;
@@ -210,11 +210,11 @@ uint8 u8AddCarToSector( tenParkingSectors enCurrentSector )
 		{
 			astMyParks[enSector0].u8AvailableSlots--;
 			astMyParks[enSector0].u8NotAvailableSlots++;
-			return PARKING_SPOT_AVAILABLE;
+			return Espacio_De_Estacionamiento_Disponible ;
 		}
 		else
 		{
-			return PARKING_SPOT_UNAVAILABLE;
+			return Espacio_De_Estacionamiento_No_Disponible;
 		}
 	}
 	else if ( enCurrentSector == enSector1 )
@@ -223,11 +223,11 @@ uint8 u8AddCarToSector( tenParkingSectors enCurrentSector )
 		{
 			astMyParks[enSector1].u8AvailableSlots--;
 			astMyParks[enSector1].u8NotAvailableSlots++;
-			return PARKING_SPOT_AVAILABLE;
+			return Espacio_De_Estacionamiento_Disponible ;
 		}
 		else
 		{
-			return PARKING_SPOT_UNAVAILABLE;
+			return Espacio_De_Estacionamiento_No_Disponible;
 		}
 	}
 	else if ( enCurrentSector == enSector2 )
@@ -236,11 +236,11 @@ uint8 u8AddCarToSector( tenParkingSectors enCurrentSector )
 		{
 			astMyParks[enSector2].u8AvailableSlots--;
 			astMyParks[enSector2].u8NotAvailableSlots++;
-			return PARKING_SPOT_AVAILABLE;
+			return Espacio_De_Estacionamiento_Disponible ;
 		}
 		else
 		{
-			return PARKING_SPOT_UNAVAILABLE;
+			return Espacio_De_Estacionamiento_No_Disponible;
 		}
 	}
 	else if ( enCurrentSector == enSector3 )
@@ -249,11 +249,11 @@ uint8 u8AddCarToSector( tenParkingSectors enCurrentSector )
 		{
 			astMyParks[enSector3].u8AvailableSlots--;
 			astMyParks[enSector3].u8NotAvailableSlots++;
-			return PARKING_SPOT_AVAILABLE;
+			return Espacio_De_Estacionamiento_Disponible ;
 		}
 		else
 		{
-			return PARKING_SPOT_UNAVAILABLE;
+			return Espacio_De_Estacionamiento_No_Disponible;
 		}
 	}
 	else if ( enCurrentSector == enSector4 )
@@ -262,11 +262,11 @@ uint8 u8AddCarToSector( tenParkingSectors enCurrentSector )
 		{
 			astMyParks[enSector4].u8AvailableSlots--;
 			astMyParks[enSector4].u8NotAvailableSlots++;
-			return PARKING_SPOT_AVAILABLE;
+			return Espacio_De_Estacionamiento_Disponible ;
 		}
 		else
 		{
-			return PARKING_SPOT_UNAVAILABLE;
+			return Espacio_De_Estacionamiento_No_Disponible;
 		}
 	}
 	else
@@ -283,11 +283,11 @@ uint8 u8RemoveCarFromSector( tenParkingSectors enCurrentSector )
 		{
 			astMyParks[enSector0].u8AvailableSlots++;
 			astMyParks[enSector0].u8NotAvailableSlots--;
-			return PARKING_SPOT_AVAILABLE;
+			return Espacio_De_Estacionamiento_Disponible ;
 		}
 		else
 		{
-			return PARKING_SPOT_UNAVAILABLE;
+			return Espacio_De_Estacionamiento_No_Disponible;
 		}
 	}
 	else if ( enCurrentSector == enSector1 )
@@ -296,11 +296,11 @@ uint8 u8RemoveCarFromSector( tenParkingSectors enCurrentSector )
 		{
 			astMyParks[enSector1].u8AvailableSlots++;
 			astMyParks[enSector1].u8NotAvailableSlots--;
-			return PARKING_SPOT_AVAILABLE;
+			return Espacio_De_Estacionamiento_Disponible ;
 		}
 		else
 		{
-			return PARKING_SPOT_UNAVAILABLE;
+			return Espacio_De_Estacionamiento_No_Disponible;
 		}
 	}
 	else if ( enCurrentSector == enSector2 )
@@ -309,11 +309,11 @@ uint8 u8RemoveCarFromSector( tenParkingSectors enCurrentSector )
 		{
 			astMyParks[enSector2].u8AvailableSlots++;
 			astMyParks[enSector2].u8NotAvailableSlots--;
-			return PARKING_SPOT_AVAILABLE;
+			return Espacio_De_Estacionamiento_Disponible ;
 		}
 		else
 		{
-			return PARKING_SPOT_UNAVAILABLE;
+			return Espacio_De_Estacionamiento_No_Disponible;
 		}
 	}
 	else if ( enCurrentSector == enSector3 )
@@ -322,11 +322,11 @@ uint8 u8RemoveCarFromSector( tenParkingSectors enCurrentSector )
 		{
 			astMyParks[enSector3].u8AvailableSlots++;
 			astMyParks[enSector3].u8NotAvailableSlots--;
-			return PARKING_SPOT_AVAILABLE;
+			return Espacio_De_Estacionamiento_Disponible ;
 		}
 		else
 		{
-			return PARKING_SPOT_UNAVAILABLE;
+			return Espacio_De_Estacionamiento_No_Disponible;
 		}
 	}
 	else if ( enCurrentSector == enSector4 )
@@ -335,11 +335,11 @@ uint8 u8RemoveCarFromSector( tenParkingSectors enCurrentSector )
 		{
 			astMyParks[enSector4].u8AvailableSlots++;
 			astMyParks[enSector4].u8NotAvailableSlots--;
-			return PARKING_SPOT_AVAILABLE;
+			return Espacio_De_Estacionamiento_Disponible;
 		}
 		else
 		{
-			return PARKING_SPOT_UNAVAILABLE;
+			return Espacio_De_Estacionamiento_No_Disponible;
 		}
 	}
 	else

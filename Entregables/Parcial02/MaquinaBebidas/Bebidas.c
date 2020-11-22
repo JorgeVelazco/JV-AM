@@ -101,26 +101,7 @@ void Bebidas ( uint8 u8Bebida )
 
 
 	}
-	else if ( u8Bebida == SEX_ON_THE_BEACH )
-	{
-
-		printf("\nADDING: Ice\n");
-		u8Hielo--;
-
-		printf("ADDING: 1 1/2 oz of peach schnapps\n");
-		u8PeachSchnapps--;
-
-		printf("ADDING: 1 oz of Vodka\n");
-		u8Vodka--;
-
-		printf("ADDING: 2 oz of Pineapple Juice\n");
-		u8PeachSchnapps--;
-
-		printf("ADDING: 1 oz of Cranberry Juice\n");
-		u8CranBerry--;
-
-
-	}
+	
 	else if ( u8Bebida == A_SHORT_TRIP_TO_HELL )
 	{
 
@@ -141,6 +122,27 @@ void Bebidas ( uint8 u8Bebida )
 
 		printf("ADDING: 8 oz of red bull energy drink\n");
 		u8RedBullEnergyDrink--;
+
+	}
+
+	else if ( u8Bebida == SEX_ON_THE_BEACH )
+	{
+
+		printf("\nADDING: Ice\n");
+		u8Hielo--;
+
+		printf("ADDING: 1 1/2 oz of peach schnapps\n");
+		u8PeachSchnapps--;
+
+		printf("ADDING: 1 oz of Vodka\n");
+		u8Vodka--;
+
+		printf("ADDING: 2 oz of Pineapple Juice\n");
+		u8PeachSchnapps--;
+
+		printf("ADDING: 1 oz of Cranberry Juice\n");
+		u8CranBerry--;
+
 
 	}
 }
@@ -182,8 +184,8 @@ uint8 Menu ( ){
 
 	printf("\n\nPlease select a beverage: \n\n");
 	printf("SAND IN THE CRACK - 1	\n");
-	printf("SEX ON THE BEACH - 2 \n");
-	printf("A SHORT TRIP TO HELL - 3\n");
+	printf("A SHORT TRIP TO HEL - 2 \n");
+	printf("SEX ON THE BEACH - 3\n");
 	printf("\nYou selected: ");
 
 	scanf("%d", &u8Bebida);

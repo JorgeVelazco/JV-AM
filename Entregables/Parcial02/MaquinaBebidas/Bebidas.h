@@ -31,9 +31,8 @@ uint8 Menu ( );
 #define TRUE						1
 #define FALSE						0
 #define SAND_IN_THE_CRACK			1
-#define SEX_ON_THE_BEACH			2
-#define A_SHORT_TRIP_TO_HELL		3
-#define DELAY_DEFAULT 				100	  
+#define A_SHORT_TRIP_TO_HELL		2
+#define SEX_ON_THE_BEACH			3  
 #define VODKA						100	 	
 #define CRANBERRY_JUICE				100 		
 #define ORANGE_JUICE				100 		
@@ -46,4 +45,5 @@ uint8 Menu ( );
 #define PINEAPPLE_JUICE				100
 #define MALIBU_COCONUT_RUM			100
 #define CAPTAIN_MORGAN_SPICED_RUM	100
+#define DELAY_DEFAULT 				100	
  
